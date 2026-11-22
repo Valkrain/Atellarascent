@@ -1,0 +1,6 @@
+{
+  "name": "Stellar Ascent: Orbital Flight Simulator",
+  "description": "A high-fidelity orbital mechanics simulator with modular craft assembly, staged separation, maneuver planning, and patched conics navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

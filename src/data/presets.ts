@@ -1,0 +1,57 @@
+import { CraftDesign } from '../types';
+
+export const CRAFT_PRESETS: CraftDesign[] = [
+  {
+    id: 'preset_explorer_1',
+    name: 'Aurelia Explorer I',
+    description: 'Standard orbital insertion rocket capable of reaching low Aurelia orbit (70-100km). Features 2 stages with Reliant engine and solid booster assist.',
+    totalMass: 14.6,
+    totalCost: 3700,
+    parts: [
+      { instanceId: 'p1', partId: 'command_pod_mk1', stage: 2, rotation: 0 },
+      { instanceId: 'p2', partId: 'parachute_mk16', stage: 2, rotation: 0 },
+      { instanceId: 'p3', partId: 'fuel_tank_medium', stage: 2, rotation: 0 },
+      { instanceId: 'p4', partId: 'engine_reliant', stage: 2, rotation: 0 },
+      { instanceId: 'p5', partId: 'decoupler_stack_small', stage: 1, rotation: 0 },
+      { instanceId: 'p6', partId: 'fuel_tank_large', stage: 1, rotation: 0 },
+      { instanceId: 'p7', partId: 'engine_reliant', stage: 1, rotation: 0 },
+      { instanceId: 'p8', partId: 'booster_thumper', stage: 0, rotation: 0 },
+      { instanceId: 'p9', partId: 'fin_av_t8', stage: 1, rotation: 0 },
+    ],
+  },
+  {
+    id: 'preset_lunara_lander',
+    name: 'Lunara Mission Lander',
+    description: 'Heavy 3-stage vehicle designed for landing on moon Lunara and returning safely to Aurelia.',
+    totalMass: 38.5,
+    totalCost: 11200,
+    parts: [
+      { instanceId: 'l1', partId: 'command_pod_mk2', stage: 3, rotation: 0 },
+      { instanceId: 'l2', partId: 'parachute_mk16', stage: 3, rotation: 0 },
+      { instanceId: 'l3', partId: 'solar_panels', stage: 3, rotation: 0 },
+      { instanceId: 'l4', partId: 'landing_legs', stage: 3, rotation: 0 },
+      { instanceId: 'l5', partId: 'engine_terrier', stage: 2, rotation: 0 },
+      { instanceId: 'l6', partId: 'fuel_tank_medium', stage: 2, rotation: 0 },
+      { instanceId: 'l7', partId: 'decoupler_stack_medium', stage: 2, rotation: 0 },
+      { instanceId: 'l8', partId: 'fuel_tank_large', stage: 1, rotation: 0 },
+      { instanceId: 'l9', partId: 'engine_reliant', stage: 1, rotation: 0 },
+      { instanceId: 'l10', partId: 'booster_thumper', stage: 0, rotation: 0 },
+      { instanceId: 'l11', partId: 'fin_delta', stage: 1, rotation: 0 },
+    ],
+  },
+  {
+    id: 'preset_probe',
+    name: 'Vespera Orbital Probe',
+    description: 'Lightweight unmanned scientific probe for interplanetary flybys and solar observation.',
+    totalMass: 4.2,
+    totalCost: 2800,
+    parts: [
+      { instanceId: 'pr1', partId: 'command_pod_mk1', stage: 1, rotation: 0 },
+      { instanceId: 'pr2', partId: 'solar_panels', stage: 1, rotation: 0 },
+      { instanceId: 'pr3', partId: 'fuel_tank_small', stage: 1, rotation: 0 },
+      { instanceId: 'pr4', partId: 'engine_terrier', stage: 1, rotation: 0 },
+      { instanceId: 'pr5', partId: 'decoupler_stack_small', stage: 0, rotation: 0 },
+      { instanceId: 'pr6', partId: 'booster_rt10', stage: 0, rotation: 0 },
+    ],
+  },
+];
